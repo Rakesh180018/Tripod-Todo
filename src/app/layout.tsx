@@ -8,9 +8,11 @@ export const metadata: Metadata = {
   title: 'Tripod Todo List',
   description: 'A beautiful and interactive todo list with date organization',
   icons: {
-    icon: '/img/favicon.png',
-    shortcut: '/img/favicon.png',
-    apple: '/img/favicon.png',
+    icon: [
+      { url: '/Tripod-Todo/img/favicon.png', sizes: '32x32', type: 'image/png' },
+    ],
+    shortcut: '/Tripod-Todo/img/favicon.png',
+    apple: '/Tripod-Todo/img/favicon.png',
   },
 }
 
@@ -22,7 +24,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/img/favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/Tripod-Todo/img/favicon.png" />
+        <link rel="apple-touch-icon" href="/Tripod-Todo/img/favicon.png" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
